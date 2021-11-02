@@ -1,0 +1,29 @@
+{
+  "name": "apiproxyserver",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "BROWSER=/opt/firefox/firefox HTTPS=true SSL_CRT_FILE=/etc/mkcert/localhost.pem SSL_KEY_FILE=/etc/mkcert/localhost-key.pem nodemon index",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/aindriu80/APIProxyServer.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aindriu80/APIProxyServer/issues"
+  },
+  "homepage": "https://github.com/aindriu80/APIProxyServer#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "needle": "^3.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.14"
+  }
+}
